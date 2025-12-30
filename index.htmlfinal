@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Divasa Fresh – Farmers to Family</title>
+
+<meta name="description" content="Divasa Fresh is an Indian farm-to-market fresh produce supply company delivering responsibly sourced vegetables and fruits with operational reliability.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green:#2f6f4e;
+  --light:#f5f7f6;
+  --text:#1f2933;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Inter, sans-serif;
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  border-bottom:1px solid var(--border);
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+header img{height:42px}
+
+.hero{
+  background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("hero.jpg") center/cover no-repeat;
+  color:#fff;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{font-size:36px;margin-bottom:10px}
+.hero p{font-size:18px;opacity:.95}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h2{font-size:26px;margin-bottom:14px}
+p{color:var(--muted);max-width:850px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:30px;
+}
+
+.card{
+  border:1px solid var(--border);
+  border-radius:6px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card div{padding:18px}
+.card h3{color:var(--green);margin-bottom:6px}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+
+.step{
+  border-left:4px solid var(--green);
+  padding-left:14px;
+  color:var(--muted);
+}
+
+form{
+  max-width:600px;
+  margin-top:30px;
+}
+
+input,select,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:14px;
+  border:1px solid var(--border);
+  border-radius:4px;
+}
+
+button{
+  background:var(--green);
+  color:#fff;
+  border:none;
+  padding:12px 26px;
+  font-size:16px;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+footer{
+  background:var(--light);
+  padding:40px 20px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+@media(max-width:600px){
+  .hero h1{font-size:28px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- Uncomment after uploading logo -->
+  <!-- <img src="logo.png" alt="Divasa Fresh Logo"> -->
+  <strong>Divasa Fresh – Farmers to Family</strong>
+</header>
+
+<section class="hero">
+  <h1>Farm-sourced produce, delivered with integrity.</h1>
+  <p>Reliable farm-to-market fresh produce supply</p>
+</section>
+
+<section class="container">
+  <h2>About Divasa Fresh</h2>
+  <p>
+    Divasa Fresh is an Indian fresh produce supply company working with partner farms to
+    deliver vegetables and fruits through structured sourcing, quality checks, and
+    disciplined logistics.
+  </p>
+</section>
+
+<section class="container">
+  <h2>Vision & Mission</h2>
+  <p><strong>Vision:</strong> To be a trusted farm-to-market supply partner across India.</p>
+  <p><strong>Mission:</strong> To operate a reliable, quality-led produce supply system for households and businesses.</p>
+</section>
+
+<section class="container">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="sourcing.jpg" alt="Farm sourcing">
+      <div>
+        <h3>Farm Sourcing</h3>
+        <p>Planned procurement through long-term farmer partnerships.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="quality.jpg" alt="Quality assurance">
+      <div>
+        <h3>Quality Assurance</h3>
+        <p>Sorting, grading, and hygiene-focused handling standards.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="delivery.jpg" alt="Delivery">
+      <div>
+        <h3>Supply & Delivery</h3>
+        <p>Predictable fulfillment for households, retail, and HORECA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">Farm-level planning</div>
+    <div class="step">Aggregation & grading</div>
+    <div class="step">Order alignment</div>
+    <div class="step">Timely delivery</div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Business Enquiry</h2>
+  <form>
+    <input placeholder="Name" required>
+    <input placeholder="Company / Household / Business Type" required>
+    <input placeholder="Contact Number" required>
+    <input type="email" placeholder="Email" required>
+    <input placeholder="Location" required>
+
+    <select required>
+      <option value="">Enquiry Type</option>
+      <option>Household</option>
+      <option>Retail</option>
+      <option>HORECA</option>
+    </select>
+
+    <textarea rows="3" placeholder="Message"></textarea>
+    <button type="submit">Submit Enquiry</button>
+  </form>
+</section>
+
+<section class="container">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+  <p><strong>Email:</strong> contact@divasafresh.com</p>
+  <p><strong>Operating Hours:</strong> 7:00 AM – 12:00 PM | 4:00 PM – 8:00 PM</p>
+</section>
+
+<footer>
+  <p><strong>Divasa Fresh – Farmers to Family</strong></p>
+  <p>Responsible sourcing • Quality discipline • Reliable operations</p>
+  <p>© Divasa Fresh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
